@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>api gyak</title>
+  </head>
+  <body>
+    <table id="termekTabla">
+      <thead>
+        <tr>  <td>id</td>
+           <td>rating</td>
+            <td>status</td>
+            <td><button class="delete"></button></td>
+           </tr>
+      </thead>
+      <tbody id="data">      
+      </tbody>
+    </table>
+
+    <form id = 'hlep'>
+      <input type="number" id="idInput">
+      <input type="number" id="rating">
+      <select id="status">
+        <option value="At Warehouse">At Warehouse</option>
+        <option value="On Delivery Vehicle">On Delivery Vehicle</option>
+        <option value="Shipped">Shipped</option>
+        <option value="Delivered">Delivered</option>
+      </select>
+      <button type="submit" id="addThing">submit</button>
+
+    </form>
+
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
